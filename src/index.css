@@ -1,0 +1,55 @@
+.dropdown{
+  margin-left: 50px;
+  width: 30%;
+  height: 30px;
+  background-color:antiquewhite;
+  color:brown;
+  font-size: 15px;
+}
+.dropdown2{
+  margin-left: 70px;
+}
+.countryname{
+  margin-left: 40%;
+}
+.temp{
+  color:royalblue;
+  margin-top: 5%;
+  margin-left: 20%;
+  display: inline-block;
+}
+.feels_like{
+  color: rosybrown;
+  margin-top: 5%;
+  margin-left: 10%;
+  display: inline-block;
+}
+.weather{
+  color:purple;
+  margin-top: 5%;
+  margin-left: 30%;
+  display:block;
+}
+body{
+background-color:lightblue;
+}
+.img{
+  margin-left: -10%;
+  margin-top: 12%;
+  width: 5%;
+  /* max-width: 5%; */
+  position:absolute;
+}
+.err{
+  color:purple;
+  text-align: center;
+  margin-top: 20%;
+}
+.date{
+  color:darkcyan;
+  margin-left: 40%;
+  margin-top: 5%;
+}
+.time{
+  color:blue;
+}
