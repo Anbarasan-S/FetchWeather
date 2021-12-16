@@ -46,7 +46,7 @@ const FetchWeather = (props) => {
             {ok && <h2 className="weather">{`${data.data.weather[0].description.toUpperCase()}`}</h2>}
             {err && <h1 className="err">Sorry We couldn't fetch the Weather for the given State/Country</h1>}
             {<h1 className="date    time">{ `${days[time.getDay()]} ${time.getHours()}:${time.getMinutes() <= "9" ? "0" + time.getMinutes() :time.getMinutes()}`}</h1>}
-            {<h1 className="date">{`${time.getDate()}-${time.getMonth()}-${time.getFullYear()}`}</h1>}
+            {<h1 className="date">{`${time.getDate()}-${time.getMonth()+1}-${time.getFullYear()}`}</h1>}
         </div>
     )
 }
