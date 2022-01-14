@@ -54,6 +54,9 @@ const IndexPage = () => {
         window.location.href=`/fetchweather/${option}`
     }
     return (
+        <>
+        <h1 className='head'>Weather Viewer</h1>
+        <div className='container'>
             <form onSubmit={onSubmit}>
             {ok&&<label>Select Country</label>}
             {ok&&<select value={option} onChange={changeCountry} className="dropdown">
@@ -67,6 +70,8 @@ const IndexPage = () => {
         <br /> <br /> <br />
         <button className="weatherbtn">Get Weather</button>
         </form>
+        </div>
+        </>
     )
 }   
 
