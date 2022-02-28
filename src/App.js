@@ -6,8 +6,8 @@ function App() {
   return (
     <Router>
       <Switch>
-      <Route path="/" component={IndexPage} ></Route>
-      <Route path="/fetchweather/:id" exact component={FetchWeather} ></Route>
+      <Route path="/" exact component={IndexPage} ></Route>
+      <Route path="/fetchweather/:id"  component={FetchWeather} ></Route>
       </Switch>
     </Router>
   );

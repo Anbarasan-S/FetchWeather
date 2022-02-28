@@ -41,11 +41,11 @@ const FetchWeather = (props) => {
             {ok && <h2 className="temp">{`Temperature: ${toCels(data.data.main.temp)} °C`}</h2>}
             {ok && <h2 className="feels_like">{`Feels Like: ${toCels(data.data.main.feels_like)} °C`}</h2>}
             {ok && data.data.weather[0].description === "clear sky" && <img src={image2} className="img" alt=""></img>}
-            {ok && ((data.data.weather[0].description === "overcast clouds") || (data.data.weather[0].description.toLowerCase().indexOf("clouds") !== -1)) && <img src={image} className="img" alt=""></img>}
+            {ok && ((data.data.weather[0].description === "overcast clouds")||(data.data.weather[0].description === "haze") || (data.data.weather[0].description.toLowerCase().indexOf("clouds") !== -1)) && <img src={image} className="img" alt=""></img>}
             {ok && data.data.weather[0].description.toLowerCase().indexOf("rain") !== -1 && <img className="img" src={image3} alt=""></img>}
             {ok && <h2 className="weather">{`${data.data.weather[0].description.toUpperCase()}`}</h2>}
             {err && <h1 className="err">Sorry We couldn't fetch the Weather for the given State/Country</h1>}
-            {<h1 className="date    time">{ `${days[time.getDay()]} ${time.getHours()}:${time.getMinutes() <= "9" ? "0" + time.getMinutes() :time.getMinutes()}`}</h1>}
+            {<h1 className="date time">{ `${days[time.getDay()]} ${time.getHours()}:${time.getMinutes() <= "9" ? "0" + time.getMinutes() :time.getMinutes()}`}</h1>}
             {<h1 className="date">{`${time.getDate()}-${time.getMonth()+1}-${time.getFullYear()}`}</h1>}
         </div>
     )

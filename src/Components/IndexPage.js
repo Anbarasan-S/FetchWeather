@@ -3,8 +3,8 @@ import axios from 'axios'
 const IndexPage = () => {
     const[data,setData]=useState([]);
     const[stateData,setStateData]=useState([]);
-    const[option,setOption]=useState("Afghanistan");
-    const[stateOption,setStateOption]=useState("Badakhshan");
+    const[option,setOption]=useState("India");
+    const[stateOption,setStateOption]=useState("Andaman and Nicobar Islands");
     const[ok,setOk]=useState(false);
     const[stateok,setStateOk]=useState(false);
 
